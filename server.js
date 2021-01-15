@@ -24,6 +24,6 @@ app.get('/about', (req, res) => {
 })
 
 
-let port = process.env.PORT;
+let port = process.env.PORT || 3000;
 
 app.listen(port, () => console.log(`Corriendo en puerto ${port}.`))
